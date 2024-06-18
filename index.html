@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Umbrella</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="umbrella-image">
+        <img
+          id="umbrella"
+          src="images/umbrella-blue.png"
+          alt="Umbrella Image"
+        />
+        <img id="logo-preview" src="" alt="Logo Preview" class="hidden" />
+      </div>
+      <div class="details">
+        <h1>Custom Umbrella</h1>
+        <div class="colors">
+          <div
+            class="color-circle"
+            data-color="blue"
+            style="background-color: #1e73be"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="pink"
+            style="background-color: #ff007f"
+          ></div>
+          <div
+            class="color-circle"
+            data-color="yellow"
+            style="background-color: #ffd700"
+          ></div>
+        </div>
+        <div class="upload-section">
+          <p>
+            Customize your umbrella<br />Upload a logo for an instant
+            preview.<br />.png and .jpg files only. Max file size is 5MB.
+          </p>
+          <input
+            type="file"
+            id="logo-upload"
+            accept="image/png, image/jpeg"
+            class="hidden"
+          />
+          <button
+            class="upload-button"
+            onclick="document.getElementById('logo-upload').click();"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 16v1a1 1 0 001 1h14a1 1 0 001-1v-1M4 12l5 5m0 0l5-5m-5 5V3"
+              />
+            </svg>
+            UPLOAD LOGO
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
